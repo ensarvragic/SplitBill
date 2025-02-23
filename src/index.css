@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 70px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .friend-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .friend-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .friend-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  p {
+    margin: 2px 0 0 0;
+    font-size: 14px;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  .button {
+    background: #ff9f43;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #ff7f0e;
+  }
+  
+  .add-friend {
+    background: #ff9f43;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
