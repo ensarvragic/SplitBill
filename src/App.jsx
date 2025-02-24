@@ -21,13 +21,23 @@ const initialFriends = [
   },
 ];
 
+function Button({children, handleClick}) {
+  return <button className="button" onClick={handleClick}>{children}</button>
+}
+
 export default function App() {
+  const[showAddFriend, setShowFriend] = useState(false);
+
+  const handleClick = () => {
+    setShowFriend((prev) => !prev)
+  }
+
   return (
     <div className="app">
       <div className="sidebar">
         <FriendList />
-        <Button>Add friend</Button>
-        <FormAddFriends/>
+        {showAddFriend && <FormAddFriends/>}
+        <Button handleClick={handleClick}>{!showAddFriend ? 'Add friend' : 'close'}</Button>
       </div>
       <FormSplitBill/>
     </div>
@@ -76,14 +86,11 @@ function Friend({ friend }) {
 }
 
 
-function Button({children}) {
-  return <button className="button">{children}</button>
-}
 
 function FormAddFriends(){
 return(
   <form className="form-add-friends">
-    <label>Freind name🧑‍🤝‍🧑</label>
+    <label>Friend name🧑‍🤝‍🧑</label>
     <input type="text"/>
 
     <label>Image Url</label>
