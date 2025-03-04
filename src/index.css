@@ -97,3 +97,6 @@ button {
 button:hover {
   background-color: #e07a36;
 }
+.selected{
+  background-color: #fdf6ec;
+}
